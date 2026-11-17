@@ -1,0 +1,16 @@
+:root{
+    --fuente-prinicipal: "DM Sans", sans-serif;
+    --fuente-secundaria: "Playfair Display", serif;
+}
+
+/*Usa fuente principal*/
+
+body{
+    font-family: var(--fuente-prinicipal);
+}
+
+/*Uso de fuente secundaria en títulos específicos*/
+h1,h2,h3 {
+    font-family: var(--fuente-secundaria);
+}
+
