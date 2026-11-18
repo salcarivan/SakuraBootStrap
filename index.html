@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakura-Bootstrap</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="row">
-             <header>
+        <header class="header-sakura text-center">
+            <!--Símbolo dentro de círculo-->
+            <div class="simbolo-circulo mx-auto">
                 <span>&#x685C;</span>
-                <h1>Sakura <span>Bootstrap</span></h1>
-            </header>
-        </div>
-        
+            </div>
 
-   
+            <!--Título-->
+            <h1 class="titulo-sakura">
+                Sakura <span>Bootstrap</span>
+            </h1>
+
+            <!--Menú de navegación-->
+            <nav class="menu-sakura" aria-label="Navegación principal">
+                <ul class="nav justify-content-center flex-wrap">
+                    <li class="nav-item">
+                        <a href="#historia" class="nav-link">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Visítanos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </div>
     <script type="text/javascript" src="jquery/jquery-3.7.1.min.js"></script>
     <script tyè="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
