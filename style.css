@@ -130,3 +130,27 @@
         font-size: 3rem;
     }
 }
+
+/* Estilos para el Hero utilizando tus variables */
+.hero-sakura {
+    min-height: 75vh;
+    background-image: url('img/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: var(--fuente-principal);
+}
+
+/* Capa oscura con un subtono inspirado en tu paleta (--texto-oscuro) para mayor integración */
+.hero-sakura .hero-overlay {
+    background-color: rgba(74, 59, 82, 0.55); /* Usando la base de --texto-oscuro con opacidad */
+    z-index: 1;
+}
+
+/* Efecto hover opcional para el botón principal con tus colores */
+.hero-sakura .btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
+}
