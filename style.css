@@ -1,20 +1,125 @@
-:root{
-    /*Fuentes*/
-    --fuente-principal: "DM Sans", Sans-serif;
-      --fuente-secundaria: "Playfair Display", serif;
+:root {
+    /* Tipografías */
+    --fuente-principal: "DM Sans", sans-serif;
+    --fuente-secundaria: "Playfair Display", serif;
 
     /* Paleta Eléctrico Pastel Cueva Amatista */
     --color-1: #cdb7ff;
     --color-2: #f1b7ff;
-  --color-3: #ffb7c5;
-  --color-4: #ffb7c5;
-  --color-5: #ffcdb7;
-  --color-6: #fff1b7;
+    --color-3: #FFB7C5;
+    --color-4: #ffb7c5;
+    --color-5: #ffcdb7;
+    --color-6: #fff1b7;
 
-  /* Semánticos */
-  --primary: #cdb7ff;
-  --secondary: #f1b7ff;
-  --accent: #ffb7c5;
-  --background: #ffb7c5;
-  --text: #ffcdb7;
+    /* Semánticos */
+    --primary: #cdb7ff;
+    --secondary: #f1b7ff;
+    --accent: #FFB7C5;
+    --background: #ffb7c5;
+    --text: #ffcdb7;
+
+    /* Color principal solicitado */
+    --principal: #FFB7C5;
+    --texto-oscuro: #4a3b52;
+}
+
+/* Header general */
+.header-sakura {
+    background-color: var(--principal);
+    border-radius: 16px;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Círculo del símbolo */
+.simbolo-circulo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--background);
+    border: 3px solid var(--secondary);
+    box-shadow: 0 4px 12px rgba(205, 183, 255, 0.5);
+    font-size: 2rem;
+    color: var(--texto-oscuro);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.simbolo-circulo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(241, 183, 255, 0.7);
+}
+
+/* Título */
+.titulo-sakura {
+    font-family: var(--fuente-secundaria);
+    color: var(--texto-oscuro);
+    font-size: 1.75rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.titulo-sakura .subtitulo {
+    font-family: var(--fuente-principal);
+    font-weight: 300;
+    font-size: 0.55em;
+    color: var(--color-1);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+/* Menú */
+.menu-sakura .nav-link {
+    font-family: var(--fuente-principal);
+    font-weight: 500;
+    color: var(--texto-oscuro);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.menu-sakura .nav-link:hover,
+.menu-sakura .nav-link:focus {
+    background-color: var(--color-1);
+    color: #fff;
+}
+
+/* Mobile-first: a partir de sm (576px) */
+@media (min-width: 576px) {
+    .header-sakura {
+        padding: 2rem;
+    }
+
+    .simbolo-circulo {
+        width: 90px;
+        height: 90px;
+        font-size: 2.5rem;
+    }
+
+    .titulo-sakura {
+        font-size: 2.25rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .header-sakura {
+        padding: 2.5rem 3rem;
+    }
+
+    .simbolo-circulo {
+        width: 100px;
+        height: 100px;
+        font-size: 3rem;
+    }
+
+    .titulo-sakura {
+        font-size: 2.75rem;
+    }
+
+    .menu-sakura .nav-link {
+        font-size: 1rem;
+    }
 }
