@@ -1,16 +1,20 @@
 :root{
-    --fuente-prinicipal: "DM Sans", sans-serif;
-    --fuente-secundaria: "Playfair Display", serif;
+    /*Fuentes*/
+    --fuente-principal: "DM Sans", Sans-serif;
+      --fuente-secundaria: "Playfair Display", serif;
+
+    /* Paleta Eléctrico Pastel Cueva Amatista */
+    --color-1: #cdb7ff;
+    --color-2: #f1b7ff;
+  --color-3: #ffb7c5;
+  --color-4: #ffb7c5;
+  --color-5: #ffcdb7;
+  --color-6: #fff1b7;
+
+  /* Semánticos */
+  --primary: #cdb7ff;
+  --secondary: #f1b7ff;
+  --accent: #ffb7c5;
+  --background: #ffb7c5;
+  --text: #ffcdb7;
 }
-
-/*Usa fuente principal*/
-
-body{
-    font-family: var(--fuente-prinicipal);
-}
-
-/*Uso de fuente secundaria en títulos específicos*/
-h1,h2,h3 {
-    font-family: var(--fuente-secundaria);
-}
-

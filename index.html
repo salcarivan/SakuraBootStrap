@@ -16,35 +16,38 @@
 
 <body>
     <div class="container">
-        <header class="header-sakura text-center">
-            <!--Símbolo dentro de círculo-->
-            <div class="simbolo-circulo mx-auto">
-                <span>&#x685C;</span>
-            </div>
+        <div class="row">
+            <header class="header-sakura d-flex flex-column align-items-center justify-content-center text-center py-4">
 
-            <!--Título-->
-            <h1 class="titulo-sakura">
-                Sakura <span>Bootstrap</span>
-            </h1>
+                <!-- Símbolo dentro de un círculo -->
+                <div class="simbolo-circulo d-flex align-items-center justify-content-center mb-3">
+                    <span>&#x685C;</span>
+                </div>
 
-            <!--Menú de navegación-->
-            <nav class="menu-sakura" aria-label="Navegación principal">
-                <ul class="nav justify-content-center flex-wrap">
-                    <li class="nav-item">
-                        <a href="#historia" class="nav-link">Historia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#menu" class="nav-link">Menú</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Visítanos</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+                <!-- Título -->
+                <h1 class="titulo-sakura mb-3">
+                    Sakura <span class="subtitulo">Bootstrap</span>
+                </h1>
+
+                <!-- Menú de navegación -->
+                <nav class="menu-sakura" aria-label="Navegación principal">
+                    <ul class="nav flex-column flex-sm-row justify-content-center gap-2 gap-sm-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#historia">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#visitanos">Visítanos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
     </div>
     <script type="text/javascript" src="jquery/jquery-3.7.1.min.js"></script>
     <script tyè="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
