@@ -1,9 +1,7 @@
 :root {
-    /* Tipografías */
     --fuente-principal: "DM Sans", sans-serif;
     --fuente-secundaria: "Playfair Display", serif;
 
-    /* Paleta Eléctrico Pastel Cueva Amatista */
     --color-1: #cdb7ff;
     --color-2: #f1b7ff;
     --color-3: #FFB7C5;
@@ -11,24 +9,26 @@
     --color-5: #ffcdb7;
     --color-6: #fff1b7;
 
-    /* Semánticos */
     --primary: #cdb7ff;
     --secondary: #f1b7ff;
     --accent: #FFB7C5;
     --background: #ffb7c5;
     --text: #ffcdb7;
 
-    /* Color principal solicitado */
     --principal: #FFB7C5;
     --texto-oscuro: #4a3b52;
 }
 
-/* Header general */
+/* Header a todo el ancho, sin espacios laterales */
 .header-sakura {
     background-color: var(--principal);
-    border-radius: 16px;
+    width: 100%;
     padding: 1.5rem 1rem;
-    margin-bottom: 1rem;
+}
+
+/* Bloque marca: vertical por defecto (móvil) */
+.marca-sakura {
+    width: 100%;
 }
 
 /* Círculo del símbolo */
@@ -41,6 +41,7 @@
     box-shadow: 0 4px 12px rgba(205, 183, 255, 0.5);
     font-size: 2rem;
     color: var(--texto-oscuro);
+    flex-shrink: 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -56,6 +57,7 @@
     font-size: 1.75rem;
     margin: 0;
     letter-spacing: 1px;
+    line-height: 1.2;
 }
 
 .titulo-sakura .subtitulo {
@@ -86,10 +88,28 @@
     color: #fff;
 }
 
-/* Mobile-first: a partir de sm (576px) */
-@media (min-width: 576px) {
+/* ---------- DESKTOP ---------- */
+@media (min-width: 768px) {
     .header-sakura {
-        padding: 2rem;
+        padding: 2rem 3rem;
+    }
+
+    /* Título alineado a la izquierda cuando va en horizontal */
+    .marca-sakura {
+        justify-content: center;
+    }
+
+    .titulo-sakura {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    /* El subtítulo se integra en la misma línea visual */
+    .titulo-sakura .subtitulo {
+        display: inline;
+        margin-left: 0.75rem;
+        font-size: 0.4em;
+        vertical-align: middle;
     }
 
     .simbolo-circulo {
@@ -97,18 +117,9 @@
         height: 90px;
         font-size: 2.5rem;
     }
-
-    .titulo-sakura {
-        font-size: 2.25rem;
-    }
 }
 
-/* Desktop */
-@media (min-width: 768px) {
-    .header-sakura {
-        padding: 2.5rem 3rem;
-    }
-
+@media (min-width: 992px) {
     .simbolo-circulo {
         width: 100px;
         height: 100px;
@@ -116,10 +127,6 @@
     }
 
     .titulo-sakura {
-        font-size: 2.75rem;
-    }
-
-    .menu-sakura .nav-link {
-        font-size: 1rem;
+        font-size: 3rem;
     }
 }
