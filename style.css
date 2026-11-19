@@ -154,3 +154,103 @@
     transform: translateY(-2px);
     transition: all 0.2s ease-in-out;
 }
+
+/* ---------- SECCIÓN HISTORIA ---------- */
+.seccion-historia {
+    background-color: #fff;
+}
+
+.titulo-seccion {
+    font-family: var(--fuente-secundaria);
+    color: var(--texto-oscuro);
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.titulo-seccion::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--principal);
+    border-radius: 2px;
+    margin-top: 0.5rem;
+}
+
+.parrafo-historia {
+    font-family: var(--fuente-principal);
+    color: var(--texto-oscuro);
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* Contenedor imagen */
+.imagen-historia {
+    display: inline-block;
+    width: 100%;
+}
+
+.imagen-historia img {
+    display: block;
+    box-shadow: 0 8px 24px rgba(205, 183, 255, 0.35);
+}
+
+/* Pegatina Sakura (abajo a la derecha) */
+.pegatina-sakura {
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--principal);
+    border: 4px solid #fff;
+    box-shadow: 0 6px 18px rgba(74, 59, 82, 0.25);
+    font-size: 2.25rem;
+    color: var(--texto-oscuro);
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.pegatina-sakura:hover {
+    transform: scale(1.08) rotate(-5deg);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .seccion-historia {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+    }
+
+    .titulo-seccion {
+        font-size: 2.25rem;
+    }
+
+    .parrafo-historia {
+        font-size: 1rem;
+    }
+
+    .pegatina-sakura {
+        width: 100px;
+        height: 100px;
+        font-size: 2.75rem;
+        bottom: -25px;
+        right: -25px;
+    }
+}
+
+@media (min-width: 992px) {
+    .titulo-seccion {
+        font-size: 2.5rem;
+    }
+
+    .pegatina-sakura {
+        width: 110px;
+        height: 110px;
+        font-size: 3rem;
+    }
+}
