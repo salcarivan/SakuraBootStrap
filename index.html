@@ -130,7 +130,781 @@
     </section>
 
     <!-- Sección Menú -->
+    <section id="menu" class="seccion-menu py-5">
+        <div class="container">
+            <h2 class="titulo-seccion text-center mb-4">Menú</h2>
 
+            <!-- Filtros de categoría -->
+            <div class="filtros-menu d-flex flex-wrap justify-content-center gap-2 mb-4">
+                <button class="btn-filtro active" data-categoria="todo">Todo</button>
+                <button class="btn-filtro" data-categoria="entrante">Entrante</button>
+                <button class="btn-filtro" data-categoria="sushi">Sushi</button>
+                <button class="btn-filtro" data-categoria="sopas">Sopas</button>
+                <button class="btn-filtro" data-categoria="fritos">Fritos</button>
+                <button class="btn-filtro" data-categoria="donburi">Donburi</button>
+                <button class="btn-filtro" data-categoria="postre">Postre</button>
+                <button class="btn-filtro" data-categoria="especial">Especial</button>
+                <button class="btn-filtro" data-categoria="menu">Menú</button>
+            </div>
+
+            <!-- Grid de cards -->
+            <div class="row g-4" id="grid-platos">
+
+                <!-- ============ ENTRANTE ============ -->
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="entrante">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Edamame</h3>
+                                <span class="plato-precio">4,50 €</span>
+                            </div>
+                            <p class="plato-desc">Vainas de soja al vapor con sal marina y un toque de limón.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Soja</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="entrante">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Gyozas de pollo</h3>
+                                <span class="plato-precio">6,90 €</span>
+                            </div>
+                            <p class="plato-desc">Empanadillas japonesas a la plancha rellenas de pollo y verduras.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Soja</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="entrante">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Sunomono</h3>
+                                <span class="plato-precio">5,50 €</span>
+                            </div>
+                            <p class="plato-desc">Ensalada de pepino, wakame y sésamo con vinagre de arroz.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Sésamo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="entrante">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Takoyaki</h3>
+                                <span class="plato-precio">7,20 €</span>
+                            </div>
+                            <p class="plato-desc">Bolitas de pulpo a la plancha con salsa okonomiyaki y mayonesa.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Huevo</span>
+                                <span class="alergeno">Moluscos</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="entrante">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Age dashi tofu</h3>
+                                <span class="plato-precio">5,90 €</span>
+                            </div>
+                            <p class="plato-desc">Tofu frito crujiente con caldo dashi y cebollino.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Soja</span>
+                                <span class="alergeno">Pescado</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="entrante">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Wakame salad</h3>
+                                <span class="plato-precio">4,80 €</span>
+                            </div>
+                            <p class="plato-desc">Alga wakame marinada con sésamo tostado y vinagreta suave.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Sésamo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ============ SUSHI ============ -->
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="sushi">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Nigiri salmón</h3>
+                                <span class="plato-precio">3,20 €</span>
+                            </div>
+                            <p class="plato-desc">Dos piezas de arroz con lámina de salmón fresco.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="sushi">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Maki atún</h3>
+                                <span class="plato-precio">4,80 €</span>
+                            </div>
+                            <p class="plato-desc">Seis piezas de rollo de atún envuelto en alga nori.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Soja</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="sushi">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">California roll</h3>
+                                <span class="plato-precio">6,50 €</span>
+                            </div>
+                            <p class="plato-desc">Rollo invertido de cangrejo, aguacate y pepino con sésamo.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Crustáceos</span>
+                                <span class="alergeno">Sésamo</span>
+                                <span class="alergeno">Huevo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="sushi">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Sashimi mixto</h3>
+                                <span class="plato-precio">9,90 €</span>
+                            </div>
+                            <p class="plato-desc">Láminas de salmón y atún fresco con daikon rallado.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="sushi">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Uramaki aguacate</h3>
+                                <span class="plato-precio">5,90 €</span>
+                            </div>
+                            <p class="plato-desc">Rollo invertido vegetariano con aguacate y pepino.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Sésamo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="sushi">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Nigiri anguila</h3>
+                                <span class="plato-precio">4,50 €</span>
+                            </div>
+                            <p class="plato-desc">Dos piezas de anguila glaseada con salsa teriyaki.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Soja</span>
+                                <span class="alergeno">Gluten</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ============ SOPAS ============ -->
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="sopas">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Miso soup</h3>
+                                <span class="plato-precio">3,50 €</span>
+                            </div>
+                            <p class="plato-desc">Sopa tradicional de pasta miso con tofu y alga wakame.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Soja</span>
+                                <span class="alergeno">Pescado</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="sopas">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Ramen tonkotsu</h3>
+                                <span class="plato-precio">11,50 €</span>
+                            </div>
+                            <p class="plato-desc">Caldo de cerdo, fideos, huevo marinado y chashu.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Huevo</span>
+                                <span class="alergeno">Soja</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="sopas">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Udon vegetal</h3>
+                                <span class="plato-precio">9,50 €</span>
+                            </div>
+                            <p class="plato-desc">Fideos gruesos udon en caldo dashi con verduras.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Soja</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="sopas">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Sopa de wonton</h3>
+                                <span class="plato-precio">7,90 €</span>
+                            </div>
+                            <p class="plato-desc">Sopa clara con wontons de cerdo y cebollino.</p>
+                            <div class="plato-alergenos">
+                                <span class="plato-desc">Gluten</span>
+                                <span class="alergeno">Soja</span>
+                                <span class="alergeno">Huevo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="sopas">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Tom yum</h3>
+                                <span class="plato-precio">8,50 €</span>
+                            </div>
+                            <p class="plato-desc">Sopa tailandesa picante con gambas, lemongrass y lima.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Crustáceos</span>
+                                <span class="alergeno">Pescado</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="sopas">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Sopa de fideos soba</h3>
+                                <span class="plato-precio">8,90 €</span>
+                            </div>
+                            <p class="plato-desc">Caldo dashi con fideos de trigo sarraceno y setas shiitake.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Soja</span>
+                                <span class="alergeno">Pescado</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ============ FRITOS ============ -->
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="fritos">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Ebi tempura</h3>
+                                <span class="plato-precio">8,90 €</span>
+                            </div>
+                            <p class="plato-desc">Gambas rebozadas en tempura ligera con salsa tentsuyu.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Crustáceos</span>
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Huevo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="fritos">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Karaage</h3>
+                                <span class="plato-precio">7,50 €</span>
+                            </div>
+                            <p class="plato-desc">Trocitos de pollo marinados y fritos crujientes.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Soja</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="fritos">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Croquetas de cangrejo</h3>
+                                <span class="plato-precio">6,80 €</span>
+                            </div>
+                            <p class="plato-desc">Cuatro croquetas cremosas de cangrejo con panko.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Crustáceos</span>
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Lácteos</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="fritos">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Tempura de verduras</h3>
+                                <span class="plato-precio">6,50 €</span>
+                            </div>
+                            <p class="plato-desc">Calabacín, berenjena y batata rebozados en tempura.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Huevo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="fritos">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Yakitori frito</h3>
+                                <span class="plato-precio">7,20 €</span>
+                            </div>
+                            <p class="plato-desc">Brochetas de pollo crujientes con salsa teriyaki.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Soja</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="fritos">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Tofu frito crujiente</h3>
+                                <span class="plato-precio">5,80 €</span>
+                            </div>
+                            <p class="plato-desc">Cubos de tofu rebozados con sésamo y salsa ponzu.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Soja</span>
+                                <span class="alergeno">Sésamo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ============ DONBURI ============ -->
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="donburi">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Oyakodon</h3>
+                                <span class="plato-precio">10,90 €</span>
+                            </div>
+                            <p class="plato-desc">Arroz con pollo, huevo y cebolla en caldo dashi.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Huevo</span>
+                                <span class="alergeno">Soja</span>
+                                <span class="alergeno">Pescado</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="donburi">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Katsudon</h3>
+                                <span class="plato-precio">11,50 €</span>
+                            </div>
+                            <p class="plato-desc">Arroz con cerdo empanado, huevo y cebolla caramelizada.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Huevo</span>
+                                <span class="alergeno">Soja</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="donburi">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Chirashi</h3>
+                                <span class="plato-precio">14,90 €</span>
+                            </div>
+                            <p class="plato-desc">Bol de arroz con láminas variadas de pescado fresco.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Soja</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="donburi">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Gyudon</h3>
+                                <span class="plato-precio">11,90 €</span>
+                            </div>
+                            <p class="plato-desc">Arroz con ternera laminada y cebolla en salsa dulce.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Soja</span>
+                                <span class="alergeno">Gluten</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="donburi">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Unagidon</h3>
+                                <span class="plato-precio">15,50 €</span>
+                            </div>
+                            <p class="plato-desc">Arroz con anguila glaseada a la parrilla y sésamo.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Soja</span>
+                                <span class="alergeno">Sésamo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="donburi">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Pokedon salmón</h3>
+                                <span class="plato-precio">12,90 €</span>
+                            </div>
+                            <p class="plato-desc">Arroz con salmón marinado, aguacate y edamame.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Soja</span>
+                                <span class="alergeno">Sésamo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ============ POSTRE ============ -->
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="postre">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Mochi de matcha</h3>
+                                <span class="plato-precio">4,50 €</span>
+                            </div>
+                            <p class="plato-desc">Dos mochis rellenos de helado de té verde.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Lácteos</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="postre">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Dorayaki</h3>
+                                <span class="plato-precio">4,20 €</span>
+                            </div>
+                            <p class="plato-desc">Tortitas japonesas rellenas de pasta de judía roja.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Huevo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="postre">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Cheesecake matcha</h3>
+                                <span class="plato-precio">5,50 €</span>
+                            </div>
+                            <p class="plato-desc">Tarta de queso cremosa con té verde y base de galleta.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Lácteos</span>
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Huevo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="postre">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Taiyaki</h3>
+                                <span class="plato-precio">4,80 €</span>
+                            </div>
+                            <p class="plato-desc">Pastel en forma de pez relleno de crema de chocolate.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Huevo</span>
+                                <span class="alergeno">Lácteos</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="postre">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Anmitsu</h3>
+                                <span class="plato-precio">5,20 €</span>
+                            </div>
+                            <p class="plato-desc">Postre de gelatina, fruta y pasta de judía con sirope.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Soja</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="postre">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Helado de sésamo negro</h3>
+                                <span class="plato-precio">4,90 €</span>
+                            </div>
+                            <p class="plato-desc">Cremoso helado artesanal de sésamo tostado.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Lácteos</span>
+                                <span class="alergeno">Sésamo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ============ ESPECIAL ============ -->
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="especial">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Sakura roll</h3>
+                                <span class="plato-precio">14,50 €</span>
+                            </div>
+                            <p class="plato-desc">Rollo especial con salmón, aguacate y huevas de tobiko.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Huevo</span>
+                                <span class="alergeno">Sésamo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="especial">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Dragon roll</h3>
+                                <span class="plato-precio">15,90 €</span>
+                            </div>
+                            <p class="plato-desc">Rollo cubierto de aguacate con anguila y salsa teriyaki.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Soja</span>
+                                <span class="alergeno">Gluten</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="especial">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Rainbow roll</h3>
+                                <span class="plato-precio">16,50 €</span>
+                            </div>
+                            <p class="plato-desc">California roll cubierto de láminas de pescado variado.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Crustáceos</span>
+                                <span class="alergeno">Sésamo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="especial">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Temaki de salmón</h3>
+                                <span class="plato-precio">6,90 €</span>
+                            </div>
+                            <p class="plato-desc">Cono de alga nori relleno de arroz y salmón fresco.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="especial">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Tartar de atún</h3>
+                                <span class="plato-precio">12,50 €</span>
+                            </div>
+                            <p class="plato-desc">Atún picado con aguacate, sésamo y mayonesa japonesa.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Huevo</span>
+                                <span class="alergeno">Sésamo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="especial">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Poke bowl Sakura</h3>
+                                <span class="plato-precio">13,90 €</span>
+                            </div>
+                            <p class="plato-desc">Bowl de arroz con salmón, mango, aguacate y edamame.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Soja</span>
+                                <span class="alergeno">Sésamo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ============ MENÚ ============ -->
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="menu">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Menú Sakura</h3>
+                                <span class="plato-precio">18,90 €</span>
+                            </div>
+                            <p class="plato-desc">Miso soup, 8 piezas de sushi variado y postre del día.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Soja</span>
+                                <span class="alergeno">Sésamo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="menu">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Menú Mediodía</h3>
+                                <span class="plato-precio">14,50 €</span>
+                            </div>
+                            <p class="plato-desc">Entrante, plato principal a elegir, postre y bebida.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Soja</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="menu">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Menú Vegetariano</h3>
+                                <span class="plato-precio">16,90 €</span>
+                            </div>
+                            <p class="plato-desc">Tempura de verduras, uramaki aguacate y mochi.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Gluten</span>
+                                <span class="alergeno">Huevo</span>
+                                <span class="alergeno">Sésamo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="menu">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Menú Degustación</h3>
+                                <span class="plato-precio">24,90 €</span>
+                            </div>
+                            <p class="plato-desc">Selección de 5 pases del chef con postre especial.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Crustáceos</span>
+                                <span class="alergeno">Soja</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="menu">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Menú Familiar</h3>
+                                <span class="plato-precio">39,90 €</span>
+                            </div>
+                            <p class="plato-desc">Para 2 personas: 24 piezas, 2 sopas y 2 postres.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Soja</span>
+                                <span class="alergeno">Sésamo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card-plato" data-categoria="menu">
+                    <article class="plato-card h-100">
+                        <div class="plato-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3 class="plato-nombre">Bento Sakura</h3>
+                                <span class="plato-precio">19,90 €</span>
+                            </div>
+                            <p class="plato-desc">Caja bento con sushi, tempura, ensalada y arroz.</p>
+                            <div class="plato-alergenos">
+                                <span class="alergeno">Pescado</span>
+                                <span class="alergeno">Crustáceos</span>
+                                <span class="alergeno">Gluten</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="jquery/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>

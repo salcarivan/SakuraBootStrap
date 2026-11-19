@@ -280,3 +280,115 @@
 }
 
 /* ---------- SECCIÓN MENÚ ---------- */
+.seccion-menu {
+    background-color: #fffaf5;
+}
+
+/* Botones de filtro */
+.btn-filtro {
+    font-family: var(--fuente-principal);
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.5rem 1.1rem;
+    border: 2px solid var(--principal);
+    background: transparent;
+    color: var(--texto-oscuro);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-filtro:hover {
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+    color: #fff;
+}
+
+.btn-filtro.active {
+    background-color: var(--principal);
+    border-color: var(--principal);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(255, 183, 197, 0.5);
+}
+
+/* Card del plato */
+.plato-card {
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid rgba(205, 183, 255, 0.35);
+    box-shadow: 0 4px 14px rgba(74, 59, 82, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
+}
+
+.plato-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(255, 183, 197, 0.35);
+}
+
+.plato-body {
+    padding: 1.25rem;
+}
+
+.plato-nombre {
+    font-family: var(--fuente-secundaria);
+    font-size: 1.15rem;
+    color: var(--texto-oscuro);
+    margin: 0;
+    line-height: 1.3;
+    padding-right: 0.75rem;
+}
+
+.plato-precio {
+    font-family: var(--fuente-principal);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--principal);
+    white-space: nowrap;
+}
+
+.plato-desc {
+    font-family: var(--fuente-principal);
+    font-size: 0.9rem;
+    color: #6b5b73;
+    line-height: 1.55;
+    margin-bottom: 1rem;
+}
+
+/* Etiquetas de alérgenos */
+.plato-alergenos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.alergeno {
+    font-family: var(--fuente-principal);
+    font-size: 0.72rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    background-color: var(--color-2);
+    color: var(--texto-oscuro);
+    border: 1px solid var(--color-1);
+}
+
+/* Ocultar cards filtradas */
+.card-plato.oculto {
+    display: none;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .plato-nombre {
+        font-size: 1.25rem;
+    }
+    .plato-desc {
+        font-size: 0.95rem;
+    }
+    .alergeno {
+        font-size: 0.75rem;
+    }
+}
