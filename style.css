@@ -281,7 +281,7 @@
 
 /* ---------- SECCIÓN MENÚ ---------- */
 .seccion-menu {
-    background-color: #fffaf5;
+    background-color: var(--background);
 }
 
 /* Botones de filtro */
