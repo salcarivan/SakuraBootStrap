@@ -392,3 +392,99 @@
         font-size: 0.75rem;
     }
 }
+
+/* ---------- SECCIÓN GALERÍA ---------- */
+.seccion-galeria{
+    background-color: var(--color-6);
+}
+
+/* Contenedor del carrusel con altura fija y bordes redondeados */
+#carruselGaleria {
+    max-width: 480px;
+    margin: 0 auto;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(205, 183, 255, 0.45);
+}
+
+/*Altura fija para evitar saltos y manterner el encuandre*/
+#carruselGaleria .carousel-inner,
+#carruselGaleria .carousel-item {
+   aspect-ratio: 3/4; /*Para carruseles vericale*/
+   height: auto;
+}
+
+#carruselGaleria .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 6s ease-out;
+}
+
+/* Zoom muy suave para no recortar más */
+#carruselGaleria .carousel-item.active img {
+    transform: scale(1.03);
+}
+
+/*Indicadore sacordes a la paleta*/
+#carruselGaleria .carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid var(--principal);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+#carruselGaleria .carousel-indicators .active{
+    background-color: var(--principal);
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+/* Flechas con fondo suave y hover */
+#carruselGaleria .carousel-control-prev,
+#carruselGaleria .carousel-control-next {
+    width: 52px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#carruselGaleria:hover .carousel-control-prev,
+#carruselGaleria:hover .carousel-control-next {
+    opacity: 1;
+}
+
+#carruselGaleria .carousel-control-prev-icon,
+#carruselGaleria .carousel-control-next-icon {
+    background-color: rgba(74, 59, 82, 0.6);
+    border-radius: 50%;
+    padding: 1.4rem;
+    background-size: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#carruselGaleria .carousel-control-prev-icon:hover,
+#carruselGaleria .carousel-control-next-icon:hover {
+    background-color: var(--principal);
+    transform: scale(1.1);
+}
+
+/* Móvil: altura menor */
+@media (max-width: 767.68px) {
+    #carruselGaleria .carousel-inner,
+    #carruselGaleria .carousel-item {
+        height: 260px;
+    }
+    #carruselGaleria .carousel-control-prev,
+    #carruselGaleria .carousel-control-next {
+        opacity: 1; /* en móvil siempre visibles */
+        width: 40px;
+    }
+    #carruselGaleria .carousel-control-prev-icon,
+    #carruselGaleria .carousel-control-next-icon {
+        padding: 1rem;
+    }
+}

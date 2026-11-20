@@ -907,13 +907,58 @@
     </section>
 
     <!--Sección Galería-->
-    <section id="galria" class="seccion-galeria">
-
+    <section id="galeria" class="seccion-galeria py-5">
+        <div class="container">
+            <h2 class="titulo-seccion text-center mb-4">Galería</h2>
+            <div id="carruselGaleria" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-bs-interval="4000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselGaleria" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carruselGaleria" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carruselGaleria" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carruselGaleria" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carruselGaleria" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/gal01.jpg" alt="Slide 1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gal02.jpg" alt="Slide 2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gal03.jpg" alt="Slide 3" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gal04.jpg" alt="Slide 4" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gal05.jpg" alt="Slide 2" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselGaleria"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselGaleria"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
     </section>
 
-    <script type="text/javascript" src="app.js"></script>
+
     <script type="text/javascript" src="jquery/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>
