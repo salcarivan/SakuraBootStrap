@@ -1,4 +1,3 @@
-````markdown
 # SakuraBootStrap
 
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
@@ -31,8 +30,6 @@ SakuraBootStrap es un proyecto web de una página creado con Bootstrap. Está di
 ```bash
 git clone https://github.com/usuario/SakuraBootStrap.git
 ```
-````
-
 2. Accede al directorio:
 
 ```bash
